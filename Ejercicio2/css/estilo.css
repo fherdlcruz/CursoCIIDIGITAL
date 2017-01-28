@@ -9,14 +9,32 @@ body{
 header{
 	margin: 0px auto;
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	border: 1px red solid;
+	background-color: red;
+}
+header nav{
+	background-color: red;
 }
 
+header nav img{
+	display: inline-block;
+	position: absolute;
+	width: 90px;
+	height: 50px;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+	background-color: red;
+}
 
 header nav ul{
+	position: absolute;
 	list-style: none;
 	text-align: right;
+	width: 80%;
+
+	
 }
 header nav ul li{
 	text-decoration: none;
@@ -25,6 +43,7 @@ header nav ul li{
 	display: inline-block;
 	padding: 10px 10px 10px 10px;
 	margin: 5px 10px 5px 10px;
+	
 }
 header nav ul li a{
 	text-decoration:none;
@@ -35,4 +54,9 @@ header nav ul li a{
 header nav ul li a:hover{
 	background-color: #2A2A2A;
 }
-
+.contenido{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	border: 1px black solid;
+}

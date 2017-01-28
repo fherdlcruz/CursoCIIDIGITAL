@@ -1,0 +1,84 @@
+header img
+{
+	width: 110px;
+	height: 110px;
+	position: absolute;
+
+}
+header{
+	width: 90%;
+	margin: 0 auto;
+	height: 120px;
+
+}
+
+header nav 
+{	
+	text-align: right;
+	
+}
+header nav ul
+{
+
+}
+header nav ul li
+{
+	text-decoration: none;
+	font-family: 'Aclonica';
+	font-weight:  bold;
+	font-size:  16px;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+	margin: 5px 10px 5px 10px;
+	background-color: black;
+	top: 30px;
+	position: relative;
+	border-radius: 5px;
+
+}
+.clear
+{
+	clear: both;
+}
+header nav ul li a{
+	text-decoration:none;
+	padding: 10px;
+	color: white;
+	
+}
+header nav ul li:hover{
+	background-color: #E30613;
+	border: 4px solid black;
+}
+div.slider 
+{
+	overflow: hidden;
+}
+div.slider figure img
+{
+	width: 20%;
+	float: left;
+	height: 400px;
+}
+div.slider figure 
+{
+	position: relative;
+	width: 500%;
+	margin: 0%;
+	left: 0%;
+	text-align: left;
+	font-size: 0%;
+	animation: 30s animation-slider infinite;
+}
+@keyframes animation-slider
+{
+	0% {left: 0%;}
+	20% {left: 0%;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100% {left: -400%;}
+}
