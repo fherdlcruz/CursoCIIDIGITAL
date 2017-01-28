@@ -1,6 +1,6 @@
 *{
 	margin:0 auto;
-	background-color: #F4F4E0;
+	background-color: #92D7FF;
 }
 body{
 	margin: 0 auto;
@@ -10,29 +10,107 @@ header{
 	margin: 0px auto;
 	width: 100%;
 	height: 60px;
-	border: 1px red solid;
+	
+	
 }
+ 
+header nav img{
+	width: 60px;
+		position: absolute;
+		display: inline-block;
+		padding-left: 20px;
 
+	
+} 
 
 header nav ul{
 	list-style: none;
 	text-align: right;
+	
+
 }
 header nav ul li{
 	text-decoration: none;
 	font-weight:  bold;
-	font-size:  20px;
+	font-size:  16px;
 	display: inline-block;
 	padding: 10px 10px 10px 10px;
-	margin: 5px 10px 5px 10px;
+	margin: 5px 15px 5px 5px;
+	
 }
 header nav ul li a{
 	text-decoration:none;
-	border:1px #2A2A2A solid;
+	
 	padding: 10px 10px 10px 10px;
+
 	
 }
 header nav ul li a:hover{
-	background-color: #2A2A2A;
+	border-right: 5px rgb(40, 19, 255) solid;
+	border-top: 5px rgb(40, 19, 255) solid;
+	margin-bottom: 5px rgb(40, 19, 255) solid;
+	border-left: 5px rgb(40, 19, 255) solid;
+	border-style: dashed;
+	border-radius: 10px;
 }
 
+/*.contenido{ 
+	position: relative;
+	widows: 100%;
+	height: 300px;
+	border: 1px black solid;
+	content: url();
+	margin-top: 5px;
+}
+*/
+.formato {
+
+	color: black;
+
+}
+
+.subrayado{
+	text-decoration: underline;
+}
+
+.logo{
+
+	width:110px;
+}
+.logo:hover{
+	border-right: 5px rgb(40, 19, 255) solid;
+	width: 100px;
+	border-style: outset;
+}
+
+div.sliders{
+	overflow: hidden;
+}
+div.sliders figure img{
+	width: 20%; 
+	float: left; 
+	height: 400px;
+
+}
+
+div.sliders figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: 0;
+	font-size: 0;
+	animation: 30s mianimacion infinite;
+}
+
+@keyframes mianimacion{
+	0%{left: 0%;}
+	20%{left: 0%;}
+	25%{left: -100%;}
+	45%{left: -100%;}
+	50%{left: -200%;}
+	70%{left: -200%;}
+	75%{left: -300%}
+	95%{left: -300%}
+	100%{left: -400%}
+}
