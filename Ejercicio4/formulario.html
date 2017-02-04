@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+
+</head>
+<body>
+	<form oninput="resultado.value= parseInt(rango.value)">
+		Nombre:
+		<input type="text" name="Nombre"><br>
+		Apellido Paterno:
+		<input type="text" name="Apellido Paterno"><br>
+		Apellido Materno:
+		<input type="text" name="Apellido Materno"><br>
+		
+		Direccion:
+		<input type="text" name="Direccion"><br>
+		Numero Exterior:
+		<input type="number" name="Numero Exterior" min="1" max="1000"><br>
+		
+		Numero Interior:
+		<input type="number" name="Numero Interior" min="1" max="1000"><br>
+		Colonia:
+		<input type="text" name="Colonia"><br>
+		Municipio:
+		<input type="text" name="Municipio"><br>
+		<datalist id="Municipio">
+		<option value="Paraiso"></option>
+		<option value="Centro"></option>
+		<option value="Jalpa de Méndez"></option>
+		<option value="Tenosique"></option>
+		</datalist>
+		Estado:
+		<input list="Estado" name="Estado"><br>
+		<datalist id="Estado">
+		<option value="Tabasco"></option>
+		<option value="Veracruz"></option>
+		<option value="Tamaulipas"></option>
+		<option value="Monterrey"></option>
+		</datalist>
+		Pais:
+		<input list="Pais" name="Pais"><br>
+		<datalist id="Pais">
+		<option value="México"></option>
+		<option value="Japón"></option>
+		<option value="Escocia"></option>
+		<option value="Francia"></option>
+		</datalist>
+
+		Edad:
+		<input type="number" name="Edad" min="0" max="120"><br>
+		IMC:
+		<input type="number" name="IMC" min="10"><br>
+		Acerca de mi:
+		<textarea name="Acerca de mi" id="" cols="30" rows="5"></textarea><br>
+		Clima:
+		<input type="number" name="Clima">
+		<input type="range" id="rango" value="1">
+		<output name="resultado"></output> %
+
+
+
+</body>
+</html>
