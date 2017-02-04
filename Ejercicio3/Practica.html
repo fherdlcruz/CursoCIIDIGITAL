@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica</title>
+</head>
+<body>
+	<form action="">
+		<table border="0" width="50%">
+			<tbody>
+				<tr>
+    				<td> Nombre </td>
+					<td> <input type="texto" placeholder="ingrese su nombre"> </td>
+				</tr>
+				<tr>
+					<td> Apellido Paterno </td> 
+					<td> <input type="texto" placeholder="ingrese su apellido paterno"> </td>
+				</tr>
+				<tr>
+					<td> Apellido Materno </td>
+
+					<td> <input type="texto" placeholder="ingrese su apeliido materno"> </td>
+				</tr>
+				<tr>
+					<td> Fecha de nacimiento </td>
+					<td> <input name="fecha" type="date" placeholder="ingrese su fecha"> </td>
+					 
+				</tr>
+				<tr>
+					<td> Estatura </td> 
+					<td> <input type="texto" placeholder="ingrese su estatura"> </td>
+					<td>
+					IMC
+					</td>
+					<td> <input name="numero" type="number" placeholder="ingrese su IMC"> </td>
+				</tr>
+				<tr>
+				 <td> País </td>
+					 <td>
+						<input list="País"> 
+						<datalist id="País">
+							<option value="México"></option>
+							<option value="Brasil"></option>
+							<option value="USA"></option>
+						</datalist>
+					</td>
+ 					<td> Estado </td>
+					<td>
+						<input list="Estado"> 
+						<datalist id="Estado">
+							<option value="Villahermosa"></option>
+							<option value="DF"></option>
+							<option value="Merida"></option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Colonia
+					</td>
+					<td>
+						<input name="texto" type="text" placeholder="ingrese su colonia">
+					</td>
+					<td>
+						Municipio
+					</td>
+					<td>
+						<input list="Municipio"> 
+						<datalist id="Municipio">
+							<option value="Centro"></option>
+							<option value="Centla"></option>
+							<option value="Nacajuca"></option>
+						</datalist>
+					</td>
+					</tr>
+					<td>Dirección</td>
+					<td colspan="3"> <input style="width:100%" name="texto" type="text" placeholder="ingresa un texto"> 
+					</td>
+					<tr>
+					<td>
+						Numero Exterior
+					</td>
+					<td>
+						<input name="numero" type="number" placeholder="ingrese su no. exterior">
+					</td>
+					<td>
+						No. interior
+					</td>
+					<td>
+						<input name="numero" type="number" placeholder="ingrese su no. interior">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						Descripcion sobre mi:
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4">
+						<textarea style="width:100%" name="" id="" cols="30" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input name="enviar" type="submit" value="enviar">
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+		</form>
+	<br>
+	<td>Clima</td>
+	<form oninput="resultado.value=parseInt(rango.value)+parseInt(numero.value)">
+0
+	<input id="rango" type="range" placeholder="ingrese su rango" value="1">100°
+	<input id="numero" type="number" placeholder="ingrese su numero" value="1">
+	<output name="resultado">
+		
+	</output>
+</form>
+</body>
+</html>

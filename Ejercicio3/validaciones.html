@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Validaciones HTML5</title>
+</head>
+<body>
+<form action="">
+	Texto <input name="texto" type="text" placeholder="ingresa un texto">
+	<br>
+	<input name="correo" type="mail" placeholder="ingresa un correo electrónico">
+	<br>
+	<input name="contraseña" type="password" placeholder="ingrese su contraseña">
+	<br>
+	<input name="numero" type="number" placeholder="ingre su numero">
+	<br>
+	<input name="web" type="url" placeholder="ingrese su http">
+	<br>
+	<input name="rango" type="range" placeholder="ingrese su rango" min="0" max="4">
+	<br>
+	<input name="fecha" type="date" placeholder="ingrese su fecha">
+	<br>
+	<progress value="50" max="100"> </progress>
+	<br>
+	<input name="enviar" type="submit" value="enviar">
+	<br>
+	<textarea name="descripcion" id="" cols="30" rows="10">
+		
+	</textarea>
+	<br>
+	<input list="navegadores"> 
+	<datalist id="navegadores">
+		<option value="internet explorer"></option>
+		<option value="firefox"></option>
+		<option value="chrome"></option>
+	</datalist>
+	<br>
+	<select name="" id="">
+		<option value="1">
+			internet explorer
+		</option>
+		<option value="2">
+			firefox
+		</option>
+		<option value="3">
+			chrome
+		</option>
+
+	</select>
+	<br>
+	<select name="" id="">
+		<optgroup label="Navegadores">
+		<option value="1">
+			internet explorer
+		</option>
+		<option value="2">
+			firefox
+		</option>
+		<option value="3">
+			chrome
+		</option>
+		</optgroup>
+		<optgroup label="Sistemas Operativos">
+		<option value="1">
+			Linux
+		</option>
+		<option value="2">
+			Windows
+		</option>	
+		<option value="3">
+			Captian os
+		</option>		
+		</optgroup>
+	</select>
+</form>
+<br>
+
+<form oninput="resultado.value=parseInt(rango.value)+parseInt(numero.value)">
+0
+	<input id="rango" type="range" placeholder="ingrese su rango" value="1">100+
+	<input id="numero" type="number" placeholder="ingrese su numero" value="1">
+	<output name="resultado">
+		
+	</output>
+</form>
+	
+</body>
+</html>
