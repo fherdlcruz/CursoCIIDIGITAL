@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form oninput="porcentaje.value=parseInt(rango.value)">
+			<table border="0">
+				<tr>
+					<th>Nombre:</th>
+					<th><input type="text" name="nombre" id="nombre"></th>
+					<th>Apellido Paterno:</th>
+					<th><input type="text" name="ap" id="ap"></th>
+					<th>Apellido Materno:</th>
+					<th><input type="text" name="am" id="am"></th>
+				</tr>
+				<tr>
+					<th>Edad:</th>
+					<th><input type="text" name="edad" id="edad"></th>
+					<th>Estatura:</th>
+					<th><input type="number" min="100" max="300"></th>
+					<th>IMC:</th>
+					<th><input type="number" min="50" max="200"></th>
+				</tr>
+				<tr>
+					<th>Direccion:</th>
+					<th ><input type="text" ></th>
+					<th>Num Exterior</th>
+					<th><input type="number" maxlength="5"></th>
+					<th>Num Interior</th>
+					<th><input type="number" maxlength="5"></th>
+					
+
+				</tr>
+				<tr>
+					<th>Colonia:</th>
+					<th><input type="text"></th>
+					<th>Municipio:</th>
+					<th>
+						<select>
+						  <option value="centro">centro</option>
+						  <option value="macuspana">mascupana</option>
+						  <option value="humanguillo">humanguillo</option>
+						  <option value="cardenas">cardenas</option>
+						</select>
+					</th>
+					<th>Estado:</th>
+					<th>
+						<select>
+						  <option value="tabasco">tabasco</option>
+						  <option value="campeche">campeche</option>
+						  <option value="yucatan">yucatan</option>
+						  <option value="chiapas">chiapas</option>
+						</select>
+					</th>
+					
+				</tr>
+				<tr>
+					<th>Pais</th>
+					<th>
+						<select>
+						  <option value="Mexico">Mexico</option>
+						  <option value="usa">USA</option>
+						  
+						</select>
+
+					</th>
+					<th>
+						Clima:
+					</th>
+					<th>
+						<input type="range" id="rango" value="1">
+						<output name="porcentaje"></output>%
+					</th>
+				</tr>
+				<tr>
+				<th>Acerca de mi:</th>
+					<th colspan="5">
+						<textarea name="acerca" id="acerca" cols="100" rows="10"></textarea>
+					</th>
+					
+				</tr>
+			</table>
+	</form>
+</body>
+</html>
