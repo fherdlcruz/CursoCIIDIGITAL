@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+</head>
+<body>
+<h1>Rectangulo</h1>
+	<canvas id="rectangulo" width="200px" height="100px" style="border: 1px #555 solid">
+		<script>
+			var canvas =document.getElementById("rectangulo");
+			var contexto = canvas.getContext("2d");
+			contexto.fillStyle="#ff0000";
+			contexto.fillRect(0,0,150,75);
+
+		</script>
+	</canvas>
+	<br>
+	<hr>
+	<h1>Graficos</h1>
+	<canvas id="graficos" width="200" height="200"></canvas>
+	<script>
+		var canvasg = document.getElementById("graficos");
+		var contextog = canvasg.getContext("2d");
+		contextog.fillStyle="rgb(0,255,0)";
+		contextog.fillRect(25,25,100,100);
+
+		contextog.fillStyle= "rgba(255,0,0,0.6)";
+		contextog.beginPath();
+		//(ejex, ejey, radio del circulo, angulo, true=forma de relleno(conforme a las manesillas del reloj, >true y< false))
+		contextog.arc(125,100,50,0, Math.PI*2, true);
+		contextog.fill();
+
+
+		contextog.fillStyle="rgba(0,0,255,0.6)";
+		contextog.beginPath();
+		contextog.moveTo(125,100); //ejex y ejey
+
+		contextog.lineTo(175,50);
+		contextog.lineTo(225,150);
+		contextog.fill();
+	</script>
+	<hr>
+	<h1>Degradado</h1>
+	<canvas id="degradado" width="200" height="200"></canvas>
+	<script>
+		var canvasd = document.getElementById("degradado");
+		var contextod = canvasd.getContext("2d");
+
+		var degradado =contextod.createLinearGradient(0,0,200,0);
+		degradado.addColorStop(0,'red');
+		degradado.addColorStop(0.3,'blue');
+		degradado.addColorStop(0.9, 'green');
+		degradado.addColorStop(1, 'white');
+
+
+		contextod.fillStyle= degradado;
+		contextod.fillRect(10,10,150,80);
+
+	</script>
+	<hr>
+	<h1>circulo</h1>
+	<canvas id="circulos" width="300" height="300"></canvas>
+	<script>
+		var canvasc = document.getElementById("circulos");
+		var contextoc = canvasc.getContext("2d");
+		contextoc.fillStyle="rgba(0,0,255,0.6)";
+		contextoc.beginPath();
+		contextoc.arc(95,50,40,0, Math.PI*2, true);
+		contextoc.fill();
+		contextoc.stroke();
+
+
+
+	</script>
+<hr>
+	<canvas id="fuente" width="300" height="300"></canvas>
+	<script>
+		
+		var canvasf =document.getElementById("fuente");
+		var contextof = canvasf.getContext("2d");
+
+		contextof.beginPath();
+		contextof.font="30px Arial";
+		contextof.fillText("Mi texto", 10,50);
+	</script>
+</body>
+</html>
