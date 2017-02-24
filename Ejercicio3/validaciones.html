@@ -20,5 +20,18 @@
 			</tbody>
 		</table>
 	</form>
+	<form oninput="resultado.value=parseInt(rango.value)+parseInt(numero.value)">
+		<input type="range" id="rango" value="1">+100
+		<input type="number" id="numero" value="1">
+		<output name="resultado"></output>
+
+		<input list="miLista">
+		<datalist id="miLista">
+			<option value="firefox">
+			<option value="chorme">
+			<option value="safari">
+			<option value="opera">
+		</datalist>
+	</form>
 </body>
 </html>

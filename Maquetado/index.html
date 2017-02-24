@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maquetado</title>
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="js/jquery.js">
+		
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(this).scrollTop()>300)
+					{console.log("estoy cambiando")
+					$("nav").css("opacity","0.5")
+					$("header").attr("class","navegacionfix")
+			}
+					else{
+						console.log("no cambio")
+						$("nav").css("opacity","1")
+					}
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="fondo inicio" id="inicio">
+		<header>
+			<a href="#inicio"><h1>TechSolutions</h1></a>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li id="logo"><a id="techsolutions" href="#index">TechSolutions</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="script-banner">
+		<h1>Servicios que Impactan!!!</h1>
+		<h3>Especialistas en servicios Informaticos y Tecnologicos</h3>
+	</div> 
+	<div id="nosotros" class="alinear">
+		<h1 class="titulo">Nosotros</h1>
+	</div>
+
+
+<!-- Servicios -->
+
+
+	<div id="servicios"  class="alinear">
+		<h1 class="titulo">Servicios</h1><br><br>
+		<ul>
+			<li><a href=""><img src="img/database.jpg"></a><h4>Base de Datos</h4></li>
+			<li><a href=""><img src="img/web.png"></a><h4>Desarrollo Web</h4></li>
+			<li><a href=""><img src="img/soporte.jpg"></a><h4>Soporte Tecnico</h4></li>
+			<li><a href=""><img src="img/software.jpg"></a><h4>Instalación de Software</h4></li>
+			<li><a href=""><img src="img/ventas.jpg"></a><h4>Venta de Equipos</h3></h4>
+		</ul>
+	</div><br>
+
+
+<!-- Contacto -->
+
+	<div id="contacto"  class="alinear">
+		<h1 class="titulo">Contacto</h1><br>
+		<section>
+			<h3>¿Necesita ayuda o tiene algún comentario sobre nuestros servicios?</h3>
+			<p>Por favor llene ésta forma y nuestro equipo le contestará lo más pronto posible.</p><br/>
+			<form action="">
+				<label for="nombre" class="form-element">Nombre</label><br/>
+				<input type="text" name="nombre" id="nombre"><br/><br/>
+				<label for="email" class="form-element">Email</label><br/>
+				<input type="email" name="email" id="email"><br/><br/>
+				<label for="servicio" class="form-element">¿Qué servicio necesita?</label><br/>
+				<select name="servicio">
+					<option value="#"></option>
+					<option value="db">Base de Datos</option>
+					<option value="web">Desarrollo Web</option>
+					<option value="software">Software</option>
+					<option value="soporte">Soporte Tecnico</option>
+					<option value="ventas">Venta de Equipos de Computo</option>
+				</select><br/><br/>
+				<label for="comentarios" class="form-element">Comentarios</label><br/>
+				 	<textarea name="message" rows="10" cols="75">
+					
+					</textarea><br/><br/>
+				<input id="boton" type="submit" name="enviar" value="Enviar Mensaje">
+			</form>
+		</section>
+
+
+<!-- Aside con horario y redes sociales -->
+		
+
+		<aside>
+			<h4>Horario</h4><br>
+			<p>
+				Lunes a Viernes de 09:00am - 07:00pm <br>
+				Sabado de 09:00am - 01:00pm
+			</p><br>
+			<h3>Redes Sociales</h3><br>
+			<ul>
+				<li><a href="#facebook"><img src="img/facebook.png" alt=""></a> </li>
+				<li><a href="twiter"><img src="img/twitter.png" alt=""></a></li>
+				<li><a href="instagram"> <img src="img/instagram.png" alt=""></a></li>
+				<li><a href="whatsapp"><img src="img/whatsapp.png" alt=""></a></li>
+			</ul><br>
+			<h3>Ubicación</h3><br>
+			<img src="img/maps.gif" alt="">
+		</aside>
+	</div>
+	<div id="foot">
+		
+	</div>
+	<footer>
+		Todos los derechos reservados © TechSolutions Soluciones Informaticas
+	</footer>
+	</body>
+</html>
